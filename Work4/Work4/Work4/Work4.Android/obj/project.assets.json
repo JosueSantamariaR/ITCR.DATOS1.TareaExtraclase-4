@@ -1969,24 +1969,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ExtremeTech\\.nuget\\packages\\": {},
+    "C:\\Users\\carlo\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ExtremeTech\\Documents\\NetBeansProjects\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4.Android\\Work4.Android.csproj",
+      "projectUniqueName": "C:\\Users\\carlo\\Desktop\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4.Android\\Work4.Android.csproj",
       "projectName": "Work4.Android",
-      "projectPath": "C:\\Users\\ExtremeTech\\Documents\\NetBeansProjects\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4.Android\\Work4.Android.csproj",
-      "packagesPath": "C:\\Users\\ExtremeTech\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ExtremeTech\\Documents\\NetBeansProjects\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4.Android\\obj\\",
+      "projectPath": "C:\\Users\\carlo\\Desktop\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4.Android\\Work4.Android.csproj",
+      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carlo\\Desktop\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ExtremeTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2000,8 +2000,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\ExtremeTech\\Documents\\NetBeansProjects\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4\\Work4.csproj": {
-              "projectPath": "C:\\Users\\ExtremeTech\\Documents\\NetBeansProjects\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4\\Work4.csproj"
+            "C:\\Users\\carlo\\Desktop\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4\\Work4.csproj": {
+              "projectPath": "C:\\Users\\carlo\\Desktop\\ITCR.DATOS1.TareaExtraclase-4\\Work4\\Work4\\Work4\\Work4\\Work4.csproj"
             }
           }
         }

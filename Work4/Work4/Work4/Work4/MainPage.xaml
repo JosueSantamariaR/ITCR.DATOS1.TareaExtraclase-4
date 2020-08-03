@@ -5,12 +5,42 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Work4.MainPage">
-
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <Grid>
+            <StackLayout Grid.Row="0">
+                <Entry Placeholder=" Ingrese el numero "
+                   Grid.Row="0"
+                   Keyboard="Numeric"
+                   HorizontalTextAlignment="Center"
+                   />
 
+                <Label Text="[Numero que se van ingresando en el arbol]"
+                   Grid.Row="1"
+                    HorizontalOptions="CenterAndExpand"/>
+
+                <Button Text="Ingresar numero"  Grid.Row="2"/>
+
+            </StackLayout>
+
+
+
+            <StackLayout Grid.Row="1">
+                <Grid>
+                    <Button Text="PreOrden"  Grid.Row="1" Grid.Column="0"/>
+
+                    <Button Text="InOrden"  Grid.Row="1" Grid.Column="1"/>
+
+                    <Button Text="PostOrden"  Grid.Row="1" Grid.Column="2"/>
+                </Grid>
+
+
+                <Label Text="Recorrido en PreOrden,PostOrden,InOrder"  Grid.Row="4" HorizontalOptions="CenterAndExpand"/>
+
+            </StackLayout>
+
+        </Grid>
+
+    </StackLayout>
+        
+            
 </ContentPage>
