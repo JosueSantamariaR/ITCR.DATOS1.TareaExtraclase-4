@@ -53,7 +53,7 @@ namespace Work4
 
         private void inOrdenButton_Clicked(object sender, EventArgs e)
         {
-            showOrden.Text=binaryTree.inOrder(binaryTree.Root);
+            showOrden.Text= binaryTree.inOrder(binaryTree.Root);
 
         }
 
