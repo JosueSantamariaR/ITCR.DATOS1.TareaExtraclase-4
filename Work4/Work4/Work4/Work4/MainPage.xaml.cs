@@ -48,18 +48,18 @@ namespace Work4
 
         private void preOrdenButton_Clicked(object sender, EventArgs e)
         {
-            showOrden.Text = binaryTree.preOrder(binaryTree.Root);
+            showOrden.Text ="preOrden ="+ binaryTree.preOrder(binaryTree.Root);
         }
 
         private void inOrdenButton_Clicked(object sender, EventArgs e)
         {
-            showOrden.Text= binaryTree.inOrder(binaryTree.Root);
+            showOrden.Text= "inOrden =" +  binaryTree.inOrder(binaryTree.Root);
 
         }
 
         private void postOrdenButton_Clicked(object sender, EventArgs e)
         {
-            showOrden.Text = binaryTree.postOrder(binaryTree.Root);
+            showOrden.Text = "postOrden =" + binaryTree.postOrder(binaryTree.Root);
         }
     }
 }
