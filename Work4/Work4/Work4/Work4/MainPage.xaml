@@ -8,17 +8,20 @@
     <StackLayout>
         <Grid>
             <StackLayout Grid.Row="0">
-                <Entry Placeholder=" Ingrese el numero "
-                   Grid.Row="0"
-                   Keyboard="Numeric"
-                   HorizontalTextAlignment="Center"
+                <Entry 
+                    Placeholder=" Ingrese el numero "
+                    Grid.Row="0"
+                    Keyboard="Numeric"
+                    HorizontalTextAlignment="Center"
+                    x:Name="entryNode"
                    />
 
-                <Label Text="[Numero que se van ingresando en el arbol]"
+                <Label Text=""
                    Grid.Row="1"
-                    HorizontalOptions="CenterAndExpand"/>
+                    HorizontalOptions="CenterAndExpand"
+                       x:Name="showTree"/>
 
-                <Button Text="Ingresar numero"  Grid.Row="2"/>
+                <Button Text="Ingresar numero"  Grid.Row="2" x:Name="insertButton" Clicked="insertButton_Clicked"/>
 
             </StackLayout>
 
@@ -26,15 +29,15 @@
 
             <StackLayout Grid.Row="1">
                 <Grid>
-                    <Button Text="PreOrden"  Grid.Row="1" Grid.Column="0"/>
+                    <Button Text="PreOrden"  Grid.Row="1" Grid.Column="0" x:Name="preOrdenButton" Clicked="preOrdenButton_Clicked"/>
 
-                    <Button Text="InOrden"  Grid.Row="1" Grid.Column="1"/>
+                    <Button Text="InOrden"  Grid.Row="1" Grid.Column="1"  x:Name="inOrdenButton" Clicked="inOrdenButton_Clicked"/>
 
-                    <Button Text="PostOrden"  Grid.Row="1" Grid.Column="2"/>
+                    <Button Text="PostOrden"  Grid.Row="1" Grid.Column="2"  x:Name="postOrdenButton" Clicked="postOrdenButton_Clicked"/>
                 </Grid>
 
 
-                <Label Text="Recorrido en PreOrden,PostOrden,InOrder"  Grid.Row="4" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Recorrido en PreOrden,PostOrden,InOrder"  Grid.Row="4" HorizontalOptions="CenterAndExpand"  x:Name="showOrden"/>
 
             </StackLayout>
 

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+
 
 namespace Work4
 {
@@ -13,9 +15,51 @@ namespace Work4
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        BinaryTree binaryTree = new BinaryTree();
+       
+       
+        
+
         public MainPage()
         {
             InitializeComponent();
+           
+            
+        }
+        
+        
+        private void insertButton_Clicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(entryNode.Text))
+            {
+                int value = int.Parse((entryNode.Text));
+                binaryTree.insert(value);
+                showTree.Text += entryNode.Text + " ";
+                entryNode.Text = string.Empty;
+            }
+            else
+            {
+                this.DisplayAlert("Error","Ingrese un numero por favor","ok");
+            }
+
+
+        }
+
+
+        private void preOrdenButton_Clicked(object sender, EventArgs e)
+        {
+            showOrden.Text = binaryTree.preOrder(binaryTree.Root);
+        }
+
+        private void inOrdenButton_Clicked(object sender, EventArgs e)
+        {
+            showOrden.Text=binaryTree.inOrder(binaryTree.Root);
+
+        }
+
+        private void postOrdenButton_Clicked(object sender, EventArgs e)
+        {
+            showOrden.Text = binaryTree.postOrder(binaryTree.Root);
         }
     }
 }
