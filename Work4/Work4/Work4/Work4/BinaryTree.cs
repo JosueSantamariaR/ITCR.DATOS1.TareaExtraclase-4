@@ -52,6 +52,68 @@ namespace Work4
             return true;
         }
 
+        public void remove(int value)
+        {
+            this.Root = removeAux(this.Root, value);
+        }
+
+        private Node removeAux(Node node, int value)
+        {
+            if (node == null)
+            {
+                return node;
+            }
+
+            if (value < node.Data)
+            {
+                node.LeftNode = removeAux(node.LeftNode, value);
+            }
+            else if (value > node.Data)
+            {
+                node.RightNode = removeAux(node.RightNode, value);
+            }
+            else
+            {
+                if (node.LeftNode == null)
+                {
+                    return node.RightNode;
+                }
+                else if (node.RightNode == null)
+                {
+                    return node.LeftNode;
+                }
+
+                node.Data = minValue(node.RightNode);
+
+                node.RightNode = removeAux(node.RightNode, node.Data);
+            }
+
+            return node;
+        }
+
+        private int minValue(Node node)
+        {
+            int data = node.Data;
+
+            while (node.LeftNode != null)
+            {
+                data = node.LeftNode.Data;
+                node = node.LeftNode;
+            }
+
+            return data;
+        }
+
+        public void clear(Node node)
+        {
+            if (node != null)
+            {
+                clear(node.LeftNode);
+                clear(node.RightNode);
+                remove(node.Data);
+            }
+
+        }
         public String preOrder(Node node)
         {
 
@@ -59,8 +121,7 @@ namespace Work4
 
             preOrderAux(list, node);
 
-            String finalList = "[ ";
-
+            String finalList = " [ ";
 
             for (int i = 0; i < list.Count; i++)
             {
@@ -100,7 +161,7 @@ namespace Work4
 
             inOrderAux(list, node);
 
-            String finalList = "[ ";
+            String finalList = " [ ";
 
             for (int i = 0; i < list.Count; i++)
             {
@@ -140,7 +201,7 @@ namespace Work4
 
             postOrderAux(list, node);
 
-            String finalList = "[ ";
+            String finalList = " [ ";
 
             for (int i = 0; i < list.Count; i++)
             {

@@ -61,5 +61,13 @@ namespace Work4
         {
             showOrden.Text = "postOrden =" + binaryTree.postOrder(binaryTree.Root);
         }
+
+        private void clearButton_Clicked(object sender, EventArgs e)
+        {
+            binaryTree.clear(binaryTree.Root);
+            showTree.Text = string.Empty;
+            showOrden.Text = string.Empty;
+
+        }
     }
 }

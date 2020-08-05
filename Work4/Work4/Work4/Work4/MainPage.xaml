@@ -22,6 +22,7 @@
                        x:Name="showTree"/>
 
                 <Button Text="Ingresar numero"  Grid.Row="2" x:Name="insertButton" Clicked="insertButton_Clicked"/>
+                <Button Text="Limpiar arbol"  Grid.Row="3" x:Name="clearButton" Clicked="clearButton_Clicked"/>
 
             </StackLayout>
 
